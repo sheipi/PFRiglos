@@ -1,17 +1,285 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 4 | @import "./modules/eventos";
- *   |         ^^^^^^^^^^^^^^^^^^^
- *   '
- *   scss\style.scss 4:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 4 \2502  @import \"./modules/eventos\";\d\a   \2502          ^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss\\style.scss 4:9  root stylesheet";
+* {
+  padding: 0px;
+  margin: 0px;
 }
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 0;
+  background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
+}
+
+body {
+  background-color: rgb(6, 6, 6);
+}
+body nav {
+  padding: 2% 5% !important;
+}
+body nav .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+body nav .navbar-nav {
+  background-color: rgba(17, 17, 17, 0) !important;
+  justify-content: space-between;
+  width: 52%;
+}
+body nav .navbar-nav .nav-link.active {
+  color: white;
+}
+body nav .navbar-brand img {
+  width: 50%;
+}
+body nav .navbar-collapse {
+  flex-direction: row-reverse;
+}
+body nav .navbar-expand-lg {
+  display: flex;
+}
+body nav li a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+body nav li {
+  margin-bottom: 10px;
+}
+body .index_main .index_main_portada {
+  padding: 0px 5%;
+  display: flex;
+  justify-content: space-between;
+}
+body .index_main .index_main_portada .index_main_portada_titulo {
+  width: 50%;
+}
+body .index_main .index_main_portada .index_main_portada_titulo h1 {
+  font-size: 6em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+body .index_main .index_main_portada .index_main_portada_img {
+  width: 50%;
+  margin-left: 5%;
+}
+body .index_main .index_main_info {
+  margin-top: 10vw;
+}
+body .index_main .index_main_info .index_main_info_img {
+  width: 100%;
+  height: 50vh;
+  background: url("../img/fondo_interior_isah.jpg") center center;
+}
+body .index_main .index_main_info .index_main_info_text {
+  background: black;
+  margin: -5% 5% 0% 5%;
+  padding: 5%;
+}
+body .index_main .index_main_info .index_main_info_text p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+}
+body .index_main .index_main_carreras {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-top: 200px;
+  height: 50vh;
+  margin: 20vh 5% 0px;
+  padding: 2.5%;
+  background: url("../img/fondo_interior_isah.jpg") center center;
+}
+body .index_main .index_main_carreras .index_main_carreras_socalo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+  padding: 2.5%;
+  background-color: white;
+}
+body .index_main .index_main_carreras .index_main_carreras_socalo a {
+  text-decoration: none;
+}
+body .index_main .index_main_carreras .index_main_carreras_socalo a h2 {
+  color: rgb(0, 0, 0);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 2em;
+}
+body .index_main .index_main_eventos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .index_main .index_main_eventos .index_main_eventos_contenedor {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  width: 100vw;
+  display: flex;
+  padding: 5% 5% 1%;
+  justify-content: space-between;
+}
+body .index_main .index_main_eventos .index_main_eventos_contenedor .index_main_eventos_titulo {
+  width: 40%;
+}
+body .index_main .index_main_eventos .index_main_eventos_contenedor .index_main_eventos_titulo h2 {
+  font-weight: 700;
+  font-size: 3em;
+}
+body .index_main .index_main_eventos .index_main_eventos_contenedor .index_main_eventos_fecha {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+body .index_main .index_main_eventos .index_main_eventos_contenedor .index_main_eventos_fecha .index_main_eventos_fecha_datos h3 {
+  font-size: 1.5em;
+}
+body .index_main .index_main_eventos .index_main_eventos_contenedor .index_main_eventos_fecha .index_main_eventos_fecha_datos h4 {
+  color: rgb(218, 218, 218);
+  font-size: 1em;
+}
+body .index_main .index_main_eventos .index_main_eventos_contenedor .index_main_eventos_fecha .index_main_eventos_fecha_img {
+  width: 50%;
+}
+body .index_main .index_main_eventos .index_main_eventos_contenedor .index_main_eventos_fecha .index_main_eventos_fecha_img img {
+  width: 100%;
+}
+body .index_main .index_main_eventos .index_main_eventos_mas {
+  margin-top: 10vh;
+}
+body .index_main .index_main_eventos .index_main_eventos_mas a {
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px white solid;
+}
+body .index_main .index_main_redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  background-color: rgb(183, 223, 255);
+  margin: 10vw 5% 5%;
+}
+body .index_main .index_main_redes h2 {
+  font-size: 4em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: rgb(14, 14, 14);
+}
+body .index_main .index_main_redes a {
+  font-size: 3em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: rgb(55, 0, 255);
+  text-decoration: none;
+}
+body .index_main .index_main_redes .index_main_redes_link {
+  display: flex;
+  justify-content: center;
+}
+body footer {
+  padding: 5%;
+  width: 100%;
+}
+body footer .footer_contenedor {
+  width: 50%;
+  height: 5vh;
+  display: flex;
+  align-items: end;
+}
+body footer .footer_contenedor .footer_contenedor_redes {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+body footer .footer_contenedor .footer_contenedor_redes img {
+  width: 20%;
+}
+
+/*MEDIA Qs*/
+@media screen and (min-width: 1921px) {
+  body nav {
+    padding: 2% 10% !important;
+  }
+  body .index_main .index_main_portada {
+    padding: 0px 10%;
+  }
+}
+@media screen and (max-width: 1080px) {
+  body .index_main .index_main_portada .index_main_portada_titulo h1 {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 560px) {
+  body .index_main .index_main_portada .index_main_portada_titulo h1 {
+    font-size: 2em;
+  }
+}
+@media screen and (max-width: 420px) {
+  body .index_main .index_main_portada {
+    flex-direction: column;
+    justify-content: center;
+  }
+  body .index_main .index_main_portada .index_main_portada_titulo h1 {
+    font-size: 3em;
+  }
+  body .index_main .index_main_portada .index_main_portada_img {
+    width: 100%;
+    margin: 0px;
+  }
+}
+.info_main .info_main_contenedor {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 5%;
+}
+.info_main .info_main_contenedor .info_main_contenedor_titulo {
+  padding-right: 5%;
+  width: 50%;
+}
+.info_main .info_main_contenedor .info_main_contenedor_titulo h1 {
+  font-size: 5em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+.info_main .info_main_contenedor .info_main_contenedor_texto {
+  margin-top: 5%;
+  color: white;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.info_main .info_main_contenedor .info_main_contenedor_imgs {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.info_main .info_main_contenedor .info_main_contenedor_imgs .info_main_contenedor_imgs_divisor {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 45%;
+}
+.info_main .info_main_contenedor .info_main_contenedor_imgs .info_main_contenedor_imgs_divisor .info_main_contenedor_imgs_divisor_item img {
+  width: 100%;
+  margin: 5% 0px;
+}
+.info_main .info_main_contenedor .info_main_contenedor_imgs .info_main_contenedor_imgs_divisor .info_main_contenedor_imgs_divisor_item h2, .info_main .info_main_contenedor .info_main_contenedor_imgs .info_main_contenedor_imgs_divisor .info_main_contenedor_imgs_divisor_item h3 {
+  color: white;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+.info_main .info_main_contenedor .info_main_contenedor_imgs .info_main_contenedor_imgs_divisor .info_main_contenedor_imgs_divisor_item h3 {
+  font-weight: 400;
+  font-size: 0.8em;
+}
+
+/*# sourceMappingURL=style.css.map */

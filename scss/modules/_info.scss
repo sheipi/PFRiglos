@@ -1,0 +1,55 @@
+.info_main{
+    .info_main_contenedor{
+        display: flex;
+        justify-content: space-between;
+        padding: 1% 5%;
+        .info_main_contenedor_titulo{
+            padding-right: 5%;
+            width: 50%;
+            h1{
+                font-size: 5em;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                color: white;
+             }
+        }
+        .info_main_contenedor_texto{
+            margin-top: 5%;
+            color: white;
+            font-size: 1em;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+        }
+        .info_main_contenedor_imgs{
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            .info_main_contenedor_imgs_divisor{
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                width: 45%;
+                .info_main_contenedor_imgs_divisor_item{
+                    img{
+                        width: 100%;
+                        margin: 5% 0px;
+                    }
+                    h2, h3{
+                        color: white;
+                        font-size: 1em;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 700;
+                        margin-bottom: 0px;
+
+                    }
+                    h3{
+                        font-weight: 400;
+                        font-size: 0.8em;
+                    }
+               
+                }
+          }
+        }
+    }
+}
+
