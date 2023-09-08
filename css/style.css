@@ -142,18 +142,60 @@ body .index_main .index_main_eventos .index_main_eventos_contenedor .index_main_
 body .index_main .index_main_eventos .index_main_eventos_contenedor .index_main_eventos_fecha .index_main_eventos_fecha_img img {
   width: 100%;
 }
+body .index_main .index_main_eventos .index_main_eventos_mas {
+  margin-top: 10vh;
+}
+body .index_main .index_main_eventos .index_main_eventos_mas a {
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px white solid;
+}
 body .index_main .index_main_redes {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 40vh;
-  background-color: yellow;
+  background-color: rgb(183, 223, 255);
   margin: 10vw 5% 5%;
+}
+body .index_main .index_main_redes h2 {
+  font-size: 4em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: rgb(14, 14, 14);
+}
+body .index_main .index_main_redes a {
+  font-size: 3em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: rgb(55, 0, 255);
+  text-decoration: none;
 }
 body .index_main .index_main_redes .index_main_redes_link {
   display: flex;
   justify-content: center;
+}
+body footer {
+  padding: 5%;
+  width: 100%;
+}
+body footer .footer_contenedor {
+  width: 50%;
+  height: 5vh;
+  display: flex;
+  align-items: end;
+}
+body footer .footer_contenedor .footer_contenedor_redes {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+body footer .footer_contenedor .footer_contenedor_redes img {
+  width: 20%;
 }
 
 /*MEDIA Qs*/
