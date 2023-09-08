@@ -1,0 +1,37 @@
+.carrera_main{
+    .carrera_main_contenedor{
+        display: flex;
+        justify-content: space-between;
+        padding: 0% 5%;
+        .carrera_main_contenedor_lista{
+            width: 50%;
+            h1{
+                color: white;
+                font-size: 6em;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                margin-bottom: 10%;
+            }
+            ul{
+                list-style: none;
+                columns: 2;
+                padding-left: 0px;
+                li{
+                    color: white;
+                    font-size: 1em;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 400;
+                    margin-bottom: 5%;
+                }
+            }
+            .carrera_main_contenedor_lista_titulo{
+                width: 60%;
+               
+
+            }
+        }
+        .carrera_main_contenedor_img{
+            width: 50%;
+        }
+    }
+}

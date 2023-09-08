@@ -1,0 +1,44 @@
+.eventos_main{
+    padding: 0px 5%;
+    .eventos_main_titulo{
+        width: 100%;
+        h1{
+            color: white;
+            font-size: 6em;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+        }
+    }
+    .eventos_main_contenedor{
+        display: flex;
+        justify-content: space-between;
+      
+        .eventos_main_contenedor_div{
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            .eventos_main_contenedor_div_item{
+                margin-top: 5%;
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+                h2, h3{
+                    
+                    color: white;
+                    font-size: 1em;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 700;
+                    margin-bottom: 0px;
+                    margin-top: 5%;
+
+                }
+                h3{
+                    font-weight: 400;
+                    font-size: 0.8em;
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+}

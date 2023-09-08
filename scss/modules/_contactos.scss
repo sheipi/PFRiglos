@@ -1,0 +1,35 @@
+.contacto_main{
+    .contacto_main_contenedor{
+        display: flex;
+        justify-content: space-between;
+        padding: 0% 5%;
+        .contacto_main_contenedor_lista{
+            width: 50%;
+            h1{
+                color: white;
+                font-size: 6em;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                margin-bottom: 10%;
+            }
+            ul{
+                list-style: none;
+                padding-left: 0px;
+                li{
+                    color: white;
+                    font-size: 2em;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 400;
+                }
+            }
+            .contacto_main_contenedor_lista_titulo{
+                width: 60%;
+               
+
+            }
+        }
+        .contacto_main_contenedor_img{
+            width: 50%;
+        }
+    }
+}
