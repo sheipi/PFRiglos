@@ -34,9 +34,49 @@
     }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 1080px) {
     body{
-        
+        .contacto_main{
+            .contacto_main_contenedor{
+                margin-bottom: 5%;
+                flex-direction: column;
+                .contacto_main_contenedor_lista{
+                    width: 100%;
+                    .contacto_main_contenedor_lista_titulo{
+                        width: 100%;
+                    }
+                }
+                .contacto_main_contenedor_img{
+                    width: 100%;
+                    margin-top: 5%;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+@media screen and (max-width: 680px) {
+    body{
+        .contacto_main{
+            .contacto_main_contenedor{
+                .contacto_main_contenedor_lista{
+                    .contacto_main_contenedor_lista_titulo{
+                        h1{
+                            font-size: 3em;
+                        }
+                    }
+                    ul{
+                        li{
+                            font-size: 1em;
+                        }
+                    }
+                }
+            }
+        }
 
     }
 }
