@@ -89,7 +89,6 @@ body{
             display: flex;
             justify-content: center;
             align-items: end;
-            margin-top: 200px;
             height: 50vh;
             margin: 20vh 5% 0px;
             padding: 2.5%;
@@ -248,20 +247,6 @@ body{
     body{
         .index_main{ 
             .index_main_portada{
-                .index_main_portada_titulo{
-                    h1{
-                        font-size: 2em;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 420px) {
-    body{
-        .index_main{ 
-            .index_main_portada{
                 flex-direction: column;
                 justify-content: center;
                 
@@ -275,6 +260,86 @@ body{
                     margin: 0px;
                 }
             }
+            .index_main_info{
+                .index_main_info_text{
+                    margin: 0px;
+                }
+            }
+            .index_main_carreras{
+                margin: 0px;
+                height: 30vh;
+                .index_main_carreras_socalo{
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                }
+            }
+            .index_main_eventos{
+                    flex-direction: column;
+                    .index_main_eventos_contenedor{
+                        margin-top: 10%;
+                        flex-direction: column;
+                        .index_main_eventos_titulo{
+                            width: 100%;
+                        }
+                        .index_main_eventos_fecha{
+                            width: 100%;
+                            flex-direction: column-reverse;
+                            .index_main_eventos_fecha_img{
+                                width: 100%;
+                            }
+                            .index_main_eventos_fecha_datos{
+                                margin-top: 10%;
+                            }
+                        }
+                }
+                .index_main_eventos_mas{
+                    margin-top: 2vh;
+                }
+            }
+            .index_main_redes{
+                h2{
+                    font-size: 3em;
+                    text-align: center;
+                }
+                .index_main_redes_links{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
         }
+
+        footer{
+            .footer_contenedor{
+                width: 100%;
+                .footer_contenedor_redes{
+                    display: flex;
+                    justify-content: space-around;
+                    width: 100%;
+                    img{
+                        width: 15%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 420px) {
+    body{
+        .index_main{ 
+            .index_main_carreras{
+                .index_main_carreras_socalo{
+                    flex-direction: row;
+                }
+            }
+
+            .index_main_redes{
+                h2{
+                    font-size: 4em;
+                }
+            }
+        }       
     }
 }
